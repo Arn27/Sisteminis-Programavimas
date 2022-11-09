@@ -3,7 +3,8 @@
 #include <vector>
 #include <iomanip>
 #include <string>
-#include <algorithm> 
+#include <algorithm>
+#include <cstdlib>
 
 using std::cin;
 using std::cout;
@@ -17,6 +18,3 @@ using std::left;
 using std::right;
 using std::string;
 using std::vector;
-
-#include "funkcijos.h"
-#include "funkcijos.cpp"
