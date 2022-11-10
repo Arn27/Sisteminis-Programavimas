@@ -30,7 +30,7 @@ void RusiavimasIDuFailus() {
 
 	int i = 0, egzaminas, temp = 0;
 	vector<int> namudarbai;
-	vector<Studentas> Studentai, vargsiukai, kietekai;
+	deque<Studentas> Studentai, vargsiukai, kietekai;
 
 	for (string line; getline(input, line); ) {
 		istringstream ss(line);
