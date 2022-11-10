@@ -38,8 +38,35 @@ Atlikitas kodo reorganizavimas.
 
 #V0.2
 
-*Pridėta galimybė generuoti failus su studentų duomenimis.
-*Programa skaito duomenis iš failo.
-*Galimybė atlikti studentų rūšiavimą į dvi grupes.
-*Surūšiavus studentus, programa juos spausdina į du atskirus failus.
-*Visi šie veiksmai turi laiko skaičiavimo funkcija, kurios dėka į ekraną išvedama kiek (milisekundėmis) užtruko veiksmas.
+Pridėta galimybė generuoti failus su studentų duomenimis.
+Programa skaito duomenis iš failo.
+Galimybė atlikti studentų rūšiavimą į dvi grupes.
+Surūšiavus studentus, programa juos spausdina į du atskirus failus.
+Visi šie veiksmai turi laiko skaičiavimo funkcija, kurios dėka į ekraną išvedama kiek (milisekundėmis) užtruko veiksmas.
+
+_Veiksmų atlikimo trukmė:_
+
+_Failų kūrimas:_
+1000 - 19 ms
+10 000 - 175 ms
+100 000 - 1691 ms
+1000 000 - 16630 ms
+
+_Duomenų nuskaitymas iš failų:_
+1000 - 41 ms
+10 000 - 1196 ms
+100 000 - N/A
+1000 000 - N/A
+
+_Studentų rūšiavimas į dvi grupes/kategorijas:_
+1000 - 7 ms
+10 000 - 1993 ms
+100 000 - N/A
+1000 000 - N/A
+
+_Surūšiuotų studentų išvedimas į du naujus failus:_
+1000 - 12 ms
+10 000 - 102 ms
+100 000 - 1601 ms
+1000 000 - 1791 ms
+
