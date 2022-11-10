@@ -8,7 +8,7 @@ Studentas::Studentas() {
 	galutinis = 0;
 }
 
-Studentas::Studentas(string v, string p, vector <int> n, int e) {
+Studentas::Studentas(string v, string p,  vector<int> n, int e) {
 	vardas = v;
 	pavarde = p;
 	nd = n;
