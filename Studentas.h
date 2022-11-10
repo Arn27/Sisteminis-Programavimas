@@ -1,10 +1,6 @@
 #ifndef UNTITLED_STUDENTAS_H
 #define UNTITLED_STUDENTAS_H
-#include <string>
-#include <iostream>
-#include <vector>
-#include <iomanip>
-#include <algorithm>
+#include "Bibliotekos.h"
 
 using std::cin;
 using std::cout;
@@ -20,18 +16,17 @@ using std::setw;
 using std::setprecision;
 
 
-
 class Studentas {
 	string vardas;
 	string pavarde;
-	vector <int> nd; // Namu darbu ivertinimu masyvas
+	vector<int> nd; // Namu darbu ivertinimu masyvas
 	int egz; // Egzamino rezultatas
 	double galutinis; // Galutinis balas
 
 public:
 	Studentas();
 
-	Studentas(string v, string p, vector <int> n, int e);
+	Studentas(string v, string p, vector<int> n, int e);
 
 	Studentas(const Studentas& s);
 
