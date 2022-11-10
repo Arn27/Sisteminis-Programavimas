@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UNTITLED_BIBLIOTEKOS_H
+#define UNTITLED_BIBLIOTEKOS_H
 #include <iostream>
 #include <vector>
 #include <iomanip>
@@ -7,8 +8,12 @@
 #include <cstdlib>
 #include <fstream>
 #include <sstream>
+#include <chrono>
+#include <deque>
+#include <list>
 #include "Studentas.h"
-#include "isfailo.h"
+#include "Isfailo.h"
+#include "FailuGeneravimas.h"
 
 using std::cin;
 using std::cout;
@@ -22,5 +27,8 @@ using std::left;
 using std::right;
 using std::string;
 using std::vector;
+using namespace std::chrono;
 
-void Atvaizdavimas(int v, const vector<Studentas>& S);
+//void Atvaizdavimas(int v, const deque<Studentas>& S);
+
+#endif

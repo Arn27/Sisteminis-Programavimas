@@ -8,12 +8,12 @@ Studentas::Studentas() {
 	galutinis = 0;
 }
 
-Studentas::Studentas(string v, string p, vector <int> n, int e, bool b) {
+Studentas::Studentas(string v, string p,  vector<int> n, int e) {
 	vardas = v;
 	pavarde = p;
 	nd = n;
 	egz = e;
-	countGalutinis(b);
+	galutinis = 0;
 }
 
 Studentas::Studentas(const Studentas& s) {
@@ -42,7 +42,7 @@ istream& operator>>(istream& input, Studentas& S) {
 	cout << "Ivesite rankiniu budu? Iveskite \"2\"" << endl;
 	cin >> ar;
 	if (ar == 1) {
-		cout << "Kiek namu rezultatu sugeneruoti?" << endl;
+		cout << "Kiek namu darbu rezultatu sugeneruoti?" << endl;
 		cin >> kiek;
 		for (i = 0; i < kiek; i++) {
 			pazym = rand() % 10;
@@ -68,8 +68,16 @@ istream& operator>>(istream& input, Studentas& S) {
 	return input;
 }
 
+string Studentas::getVarda() {
+	return this->vardas;
+}
+
 string Studentas::getPavarde() {
 	return this->pavarde;
+}
+
+double Studentas::getGalutinis() {
+	return this->galutinis;
 }
 
 void Studentas::countGalutinis(bool budas) {

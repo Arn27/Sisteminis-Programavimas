@@ -20,38 +20,73 @@ Destruktorius (trijų taisyklė)
 Duomenų įvedimo metodas (perdengtas cin)
 Duomenų išvedimo metodas (perdengtas cout)
 Galutinio pažymio skaičiavimo metodas (pagal medianą arbą vidurkį - renkasi žmogus)
-Baigus duomenų įvedimą, suskaičiuoja galutį balą ir juos pateikia į ekraną tokiu ar panašiu pavidalu (kur galutinis apskaičiuotas balas pateikiamas dviejų skaičių po kablelio tikslumu):
-
-Pavardė     Vardas       Galutinis (Vid.)
---------------------------------------------------
-Arvydas     Sabonis      x.xx
-Rimas       Kurtinaitis  y.yy
-...
+Baigus duomenų įvedimą, suskaičiuoja galutį balą ir juos pateikia į ekraną tokiu ar panašiu pavidalu (kur galutinis apskaičiuotas balas pateikiamas dviejų skaičių po kablelio tikslumu).
 
 Papildyta programa, kad vietoj vidurkio galutinio balo skaičiavimui būtų galima naudoti ir medianą.
 
-Pavardė     Vardas       Galutinis (Vid.) / Galutinis (Med.)
------------------------------------------------------------
-Arvydas     Sabonis      x.xx               x.xx
-Rimas       Kurtinaitis  y.yy               y.yy
-...
 Programa papildyta taip, kad ji veiktų ir tokiu atveju, kai namų darbų skaičius (n) yra nežinomas iš anksto, t.y. tik įvedimo metu vartotojas nusprendžią kuomet jis jau įvedė visų namų darbų rezultatus.
 
 Programa papildyta taip, kad būtų galimybė, jog mokinio gautieji balai už namų darbus bei egzaminą būtų generuojami atsitiktinai.
 
-Papildyta vektor programos versiją taip, kad būtų galima duomenis ne tik įvesti bet ir nuskaityti iš failo. Todėl sukurkite ir užpildykite failą studentai10.txt, kurio (preliminari) struktūra:
-Pavardė     Vardas      ND1  ND2   ND3  ND4  ND5  Egzaminas
-Vardas1     Pavardė1    8    9     10   6    10   9
-Vardas2     Pavardė2    7    10    8    5    4    6
-...
-Papildykite programą taip, kad nuskaičiuos duomenis iš failo, išvedimas preliminariai atrodytų taip:
+Papildyta vektor programos versiją taip, kad būtų galima duomenis ne tik įvesti bet ir nuskaityti iš failo.
 
-Pavardė     Vardas       Galutinis (Vid.) Galutinis (Med.)
-----------------------------------------------------------
-Arvydas     Sabonis                  x.xx             x.xx
-Rimas       Kurtinaitis              y.yy             y.yy
-...
+Papildykite programą taip, kad nuskaičiuos duomenis iš failo, išvedimas preliminariai atrodytų taip:
 
 Studentai surūšiuoti pagal pavardes ir visi stulpeliai gražiai išlygiuoti (formatuotas išvedimas).
 
-Atlikitas kodo reorganizavimą.
+Atlikitas kodo reorganizavimas.
+
+#V0.2
+
+Pridėta galimybė generuoti failus su studentų duomenimis.
+Programa skaito duomenis iš failo.
+Galimybė atlikti studentų rūšiavimą į dvi grupes.
+Surūšiavus studentus, programa juos spausdina į du atskirus failus.
+Visi šie veiksmai turi laiko skaičiavimo funkcija, kurios dėka į ekraną išvedama kiek (milisekundėmis) užtruko veiksmas.
+
+_Veiksmų atlikimo trukmė:_
+
+_Failų kūrimas:_
+
+1000 - 19 ms
+
+10 000 - 175 ms
+
+100 000 - 1691 ms
+
+1000 000 - 16630 ms
+
+_Duomenų nuskaitymas iš failų:_
+
+1000 - 41 ms
+
+10 000 - 1196 ms
+
+100 000 - N/A 
+
+1000 000 - N/A
+
+_Studentų rūšiavimas į dvi grupes/kategorijas:_
+
+1000 - 7 ms
+
+10 000 - 1993 ms
+
+100 000 - N/A
+
+1000 000 - N/A
+
+_Surūšiuotų studentų išvedimas į du naujus failus:_
+
+1000 - 12 ms
+
+10 000 - 102 ms
+
+100 000 - 1601 ms
+
+1000 000 - 1791 ms
+
+Skirtingų konteinerių testavimo rezultatai:
+
+Testuojant skirtingus konteinerius (vector, list, deque) pastebėta kad sparčiausias yra deque.
+Bet su visais variantais failų didesnių nei 100 000 eilučių programa nesugeba apdoroti.
