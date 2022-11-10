@@ -10,6 +10,7 @@
 #include <sstream>
 #include <chrono>
 #include <deque>
+#include <list>
 #include "Studentas.h"
 #include "Isfailo.h"
 #include "FailuGeneravimas.h"
@@ -28,6 +29,6 @@ using std::string;
 using std::vector;
 using namespace std::chrono;
 
-void Atvaizdavimas(int v, const vector<Studentas>& S);
+//void Atvaizdavimas(int v, const deque<Studentas>& S);
 
 #endif
