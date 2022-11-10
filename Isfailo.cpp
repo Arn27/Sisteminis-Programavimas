@@ -1,6 +1,4 @@
 #include "Isfailo.h";
-#include "Bibliotekos.h"
-#include "Studentas.h";
 
 void Isfailo( int c ) {
 	ifstream input("Studentai.txt");
@@ -10,7 +8,7 @@ void Isfailo( int c ) {
 	int nd1, nd2, nd3, nd4, nd5;
 	int i=0, egzaminas, temp = 0;
 	vector<int> namudarbai;
-	vector<Studentas> STs;
+	deque<Studentas> STs;
 
 	auto start = high_resolution_clock::now();
 	for (string line; getline(input, line); ){
