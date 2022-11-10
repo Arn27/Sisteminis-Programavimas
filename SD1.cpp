@@ -1,9 +1,8 @@
 #include "Bibliotekos.h"
 
-
 // ---------------------------------------------------------Funkcijos
 
-void Atvaizdavimas(int v, const vector<Studentas>& S) {
+void Atvaizdavimas(int v, const deque<Studentas>& S) {
 	int kiek = S.size();
 	if (v == 1) {
 		cout << setw(15) << left << "Pavarde" << setw(15) << left << "Vardas" << setw(15) << left << setprecision(2) << fixed << "Galutinis(Vidurkis)" << endl;
@@ -44,7 +43,7 @@ int main()
 	long kiekStd;
 	string r;
 	Studentas S;
-	vector <Studentas> Studentai, S1;
+	deque<Studentas> Studentai, S1;
 
 	while (option != 9) {
 		kiek = Studentai.size();
